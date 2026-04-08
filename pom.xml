@@ -17,11 +17,16 @@
         <guice.version>7.0.0</guice.version>
         <lombok.version>1.18.42</lombok.version>
         <selenide.version>7.14.0</selenide.version>
+        <postgresql.version>42.7.10</postgresql.version>
 
         <maven.version>3.13.0</maven.version>
         <surefire.version>3.5.4</surefire.version>
         <maven.checkstyle>3.3.1</maven.checkstyle>
         <spotbugs.maven>4.8.3.1</spotbugs.maven>
+
+        <databaseUrl>jdbc:postgresql://sql.otus.kartushin.su:5432/wishlist?sslmode=prefer</databaseUrl>
+        <databaseUsername>student</databaseUsername>
+        <databasePassword>student</databasePassword>
     </properties>
 
     <dependencies>
@@ -29,6 +34,12 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>${junit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.google.inject</groupId>
@@ -39,11 +50,17 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide-appium</artifactId>
             <version>${selenide.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version>
         </dependency>
     </dependencies>
 
@@ -62,6 +79,14 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${surefire.version}</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <databaseUrl>${databaseUrl}</databaseUrl>
+                        <databaseUsername>${databaseUsername}</databaseUsername>
+                        <databasePassword>${databasePassword}</databasePassword>
+                    </systemPropertyVariables>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

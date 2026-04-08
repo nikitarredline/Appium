@@ -9,7 +9,7 @@ import static io.appium.java_client.AppiumBy.id;
 
 public class MyWishlistsPage extends AbsBasePage {
 
-    private final WishlistsContent wishlistsContent =
+    private WishlistsContent wishlistsContent =
             new WishlistsContent($(id("ru.otus.wishlist:id/wishlists")));
 
     public MyWishlistsPage assertNumberOfWishlists(int value) {
@@ -36,5 +36,10 @@ public class MyWishlistsPage extends AbsBasePage {
     public WishlistItem getWishlistItem(int index) {
         return wishlistsContent.get(index)
                 .shouldBe(visible.because("Список желаний %d не виден на экране".formatted(index)));
+    }
+
+    public MyWishlistsPage tapCreateWishlist() {
+        wishlistsContent.tapCreateWishlist();
+        return this;
     }
 }
