@@ -8,30 +8,30 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static io.appium.java_client.AppiumBy.id;
 
-public class WishlistsContent extends AbsComponent<WishlistsContent> {
+public class GiftsContent extends AbsComponent<GiftsContent>{
 
     private final ElementsCollection items =
-            root.$$(id("ru.otus.wishlist:id/wishlist_item"))
-                    .as("Списки желаний");
+            root.$$(id("ru.otus.wishlist:id/gift_item"))
+                    .as("Списки подарков");
     private final SelenideElement createButton =
             $(id("ru.otus.wishlist:id/add_button"))
-                    .as("Кнопка создания списка желаний");
+                    .as("Кнопка создания списка подарков");
 
-    public WishlistsContent(SelenideElement root) {
+    public GiftsContent(SelenideElement root) {
         super(root);
     }
 
-    public WishlistItem get(int index) {
-        return new WishlistItem(items.get(index - 1));
+    public GiftItem get(int index) {
+        return new GiftItem(items.get(index - 1));
     }
 
     public void assertSizeEqualTo(int expected) {
         items.shouldHave(
-                size(expected).because("Неожидаемое количество списков желаний"));
+                size(expected).because("Неожидаемое количество списков подарков"));
     }
 
     public void tapCreate() {
-        createButton.shouldBe(visible.because("Кнопка создания списка желаний не видна"))
+        createButton.shouldBe(visible.because("Кнопка создания списка подарков не видна"))
                 .click();
     }
 }

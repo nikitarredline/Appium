@@ -1,5 +1,6 @@
 package ru.otus.pages;
 
+import com.google.inject.Singleton;
 import ru.otus.components.WishlistItem;
 import ru.otus.components.WishlistsContent;
 
@@ -7,9 +8,10 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static io.appium.java_client.AppiumBy.id;
 
+@Singleton
 public class MyWishlistsPage extends AbsBasePage {
 
-    private WishlistsContent wishlistsContent =
+    private final WishlistsContent wishlistsContent =
             new WishlistsContent($(id("ru.otus.wishlist:id/wishlists")));
 
     public MyWishlistsPage assertNumberOfWishlists(int value) {
@@ -39,7 +41,12 @@ public class MyWishlistsPage extends AbsBasePage {
     }
 
     public MyWishlistsPage tapCreateWishlist() {
-        wishlistsContent.tapCreateWishlist();
+        wishlistsContent.tapCreate();
+        return this;
+    }
+
+    public MyWishlistsPage tapTitleWishlist(int index, String value) {
+        getWishlistItem(index).tapTitle(value);
         return this;
     }
 }

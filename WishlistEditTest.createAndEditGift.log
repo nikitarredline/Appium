@@ -1,0 +1,963 @@
+--------- beginning of kernel
+04-10 07:56:48.109     0     0 I logd    : logdr: UID=2000 GID=2000 PID=28210 b tail=0 logMask=99 pid=0 start=0ns deadline=0ns
+--------- beginning of main
+04-10 07:56:48.145   454   454 E adbd    : failed to connect to socket 'tcp:6790': Connection refused
+04-10 07:56:48.146   454   454 E adbd    : failed to connect to socket 'tcp:6790': Connection refused
+04-10 07:56:48.177 12660 12679 W InputManager-JNI: Input channel object 'fd279da Toast (client)' was disposed without first being removed with the input manager!
+--------- beginning of system
+04-10 07:56:48.182 12660 12679 W NotificationService: Toast already killed. pkg=ru.otus.wishlist token=android.os.BinderProxy@e7e23fd
+04-10 07:56:48.185 12833 12833 W ToastPresenter: Error calling back ru.otus.wishlist to notify onToastHide()
+04-10 07:56:48.185 12833 12833 W ToastPresenter: android.os.DeadObjectException
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.os.BinderProxy.transactNative(Native Method)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.os.BinderProxy.transact(BinderProxy.java:571)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.app.ITransientNotificationCallback$Stub$Proxy.onToastHidden(ITransientNotificationCallback.java:145)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.widget.ToastPresenter.hide(ToastPresenter.java:262)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at com.android.systemui.toast.ToastUI$ToastOutAnimatorListener.onAnimationEnd(ToastUI.java:216)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.animation.Animator$AnimatorListener.onAnimationEnd(Animator.java:555)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.animation.AnimatorSet.endAnimation(AnimatorSet.java:1301)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.animation.AnimatorSet.doAnimationFrame(AnimatorSet.java:1086)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.animation.AnimationHandler.doAnimationFrame(AnimationHandler.java:146)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.animation.AnimationHandler.access$100(AnimationHandler.java:37)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.animation.AnimationHandler$1.doFrame(AnimationHandler.java:54)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1035)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.view.Choreographer.doCallbacks(Choreographer.java:845)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.view.Choreographer.doFrame(Choreographer.java:775)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1022)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.os.Handler.handleCallback(Handler.java:938)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.os.Looper.loopOnce(Looper.java:201)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.os.Looper.loop(Looper.java:288)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at java.lang.reflect.Method.invoke(Native Method)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+04-10 07:56:48.185 12833 12833 W ToastPresenter: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+04-10 07:56:48.168     0     0 I binder  : 12833:12833 transaction failed 29189/-22, size 104-0 line 3133
+04-10 07:56:48.816 12814 12814 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+04-10 07:56:49.595   454   454 E adbd    : failed to connect to socket 'tcp:6790': Connection refused
+04-10 07:56:49.628 12660 12679 I ActivityManager: Force stopping io.appium.uiautomator2.server.test appid=10148 user=0: from pid 28237
+04-10 07:56:49.633 12988 12988 D CarrierSvcBindHelper: No carrier app for: 0
+04-10 07:56:49.655   454   454 E adbd    : failed to connect to socket 'tcp:6790': Connection refused
+04-10 07:56:49.696 28240 28240 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+04-10 07:56:49.698 28240 28240 I AndroidRuntime: Using default boot image
+04-10 07:56:49.699 28240 28240 I AndroidRuntime: Leaving lock profiling enabled
+04-10 07:56:49.699 28240 28240 W libc    : Access denied finding property "odsign.verification.success"
+04-10 07:56:49.701 28240 28240 W app_process: ART APEX data files are untrusted.
+04-10 07:56:49.701 28240 28240 I app_process: Core platform API reporting enabled, enforcing=false
+04-10 07:56:49.698 28240 28240 W app_process: type=1400 audit(0.0:510): avc: denied { read } for name="u:object_r:odsign_prop:s0" dev="tmpfs" ino=206 scontext=u:r:shell:s0 tcontext=u:object_r:odsign_prop:s0 tclass=file permissive=0
+04-10 07:56:49.742 28240 28240 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+04-10 07:56:49.743 28240 28240 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt68l.dat
+04-10 07:56:49.747 28240 28240 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+04-10 07:56:49.759 28240 28240 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+04-10 07:56:49.764 12660 12679 I ActivityManager: Force stopping io.appium.uiautomator2.server appid=10147 user=0: start instr
+04-10 07:56:49.767 12660 12679 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10147; state: DISABLED
+04-10 07:56:49.768 12660 12679 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10147; state: DISABLED
+04-10 07:56:49.769 12660 12679 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10147; state: DISABLED
+04-10 07:56:49.769 12660 12679 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10147; state: ENABLED
+04-10 07:56:49.770 12660 12694 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10147; state: ENABLED
+04-10 07:56:49.774 12588 12588 D Zygote  : Forked child process 28255
+04-10 07:56:49.776 12660 12694 I ActivityManager: Start proc 28255:io.appium.uiautomator2.server/u0a147 for added application io.appium.uiautomator2.server
+04-10 07:56:49.780 28255 28255 I tomator2.serve: Late-enabling -Xcheck:jni
+04-10 07:56:49.789 28255 28255 W tomator2.serve: Unexpected CPU variant for X86 using defaults: x86_64
+04-10 07:56:49.797   454   473 I adbd    : jdwp connection from 28255
+04-10 07:56:49.809 12660 12679 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10147; state: DISABLED
+04-10 07:56:49.818 28255 28255 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10147; state: DISABLED
+04-10 07:56:49.824 28255 28255 W tomator2.serve: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[] | PCL[/system/framework/android.test.runner.jar*1585996318])
+04-10 07:56:49.827 28255 28255 W tomator2.serve: ClassLoaderContext classpath size mismatch. expected=0, found=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460])
+04-10 07:56:49.833 28255 28255 V GraphicsEnvironment: ANGLE Developer option for 'io.appium.uiautomator2.server' set to: 'default'
+04-10 07:56:49.833 28255 28255 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+04-10 07:56:49.836 28255 28255 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-10 07:56:49.839 28255 28255 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-10 07:56:49.841 28255 28255 W tomator2.serve: ClassLoaderContext shared library size mismatch. Expected=0, found=2 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]})
+04-10 07:56:49.844 28255 28255 W tomator2.serve: ClassLoaderContext shared library size mismatch. Expected=0, found=3 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]#PCL[/system/framework/android.test.runner.jar*1585996318]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]}};PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460:/system/framework/android.test.base.jar*3790657674:/data/app/~~QzrznTls4YMDcFuvkIkHvQ==/io.appium.uiautomator2.server.test-FOZwjUUAJz_VKk2bGm3WYg==/base.apk*2420800719:/data/app/~~QzrznTls4YMDcFuvkIkHvQ==/io.appium.uiautomator2.server.test-FOZwjUUAJz_VKk2bGm3WYg==/base.apk!classes2.dex*3565191145:/data/app/~~QzrznTls4YMDcFuvkIkHvQ==/io.appium.uiautomator2.server.test-FOZwjUUAJz_VKk2bGm3WYg==/base.apk!classes3.dex*2088283515:/data/app/~~QzrznTls4YMDcFuvkIkHvQ==/io.appium.uiautomator2.server.test-FOZwjUUAJz_VKk2bGm3WYg==/base.apk!classes4.dex*767698402:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk*3663158453:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes2.dex*3556852049:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes3.dex*2469406986:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes4.dex*1406396985:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes5.dex*3219128311:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes6.dex*3582357742:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes7.dex*1319860673:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes8.dex*3050564850:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes9.dex*3802833555:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes10.dex*2813494147:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes11.dex*4219401486:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes12.dex*659451162:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes13.dex*3470666919:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes14.dex*3636932523])
+04-10 07:56:49.846 28255 28255 W tomator2.serve: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[] | PCL[/system/framework/android.test.runner.jar*1585996318]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]#PCL[/system/framework/android.test.runner.jar*1585996318]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]}};PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460:/system/framework/android.test.base.jar*3790657674:/data/app/~~QzrznTls4YMDcFuvkIkHvQ==/io.appium.uiautomator2.server.test-FOZwjUUAJz_VKk2bGm3WYg==/base.apk*2420800719:/data/app/~~QzrznTls4YMDcFuvkIkHvQ==/io.appium.uiautomator2.server.test-FOZwjUUAJz_VKk2bGm3WYg==/base.apk!classes2.dex*3565191145:/data/app/~~QzrznTls4YMDcFuvkIkHvQ==/io.appium.uiautomator2.server.test-FOZwjUUAJz_VKk2bGm3WYg==/base.apk!classes3.dex*2088283515:/data/app/~~QzrznTls4YMDcFuvkIkHvQ==/io.appium.uiautomator2.server.test-FOZwjUUAJz_VKk2bGm3WYg==/base.apk!classes4.dex*767698402:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk*3663158453:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes2.dex*3556852049:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes3.dex*2469406986:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes4.dex*1406396985:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes5.dex*3219128311:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes6.dex*3582357742:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes7.dex*1319860673:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes8.dex*3050564850:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes9.dex*3802833555:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes10.dex*2813494147:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes11.dex*4219401486:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes12.dex*659451162:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes13.dex*3470666919:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes14.dex*3636932523])
+04-10 07:56:49.848 28255 28255 W tomator2.serve: ClassLoaderContext classpath size mismatch. expected=0, found=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]#PCL[/system/framework/android.test.runner.jar*1585996318]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]}};PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460:/system/framework/android.test.base.jar*3790657674:/data/app/~~QzrznTls4YMDcFuvkIkHvQ==/io.appium.uiautomator2.server.test-FOZwjUUAJz_VKk2bGm3WYg==/base.apk*2420800719:/data/app/~~QzrznTls4YMDcFuvkIkHvQ==/io.appium.uiautomator2.server.test-FOZwjUUAJz_VKk2bGm3WYg==/base.apk!classes2.dex*3565191145:/data/app/~~QzrznTls4YMDcFuvkIkHvQ==/io.appium.uiautomator2.server.test-FOZwjUUAJz_VKk2bGm3WYg==/base.apk!classes3.dex*2088283515:/data/app/~~QzrznTls4YMDcFuvkIkHvQ==/io.appium.uiautomator2.server.test-FOZwjUUAJz_VKk2bGm3WYg==/base.apk!classes4.dex*767698402:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk*3663158453:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes2.dex*3556852049:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes3.dex*2469406986:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes4.dex*1406396985:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes5.dex*3219128311:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes6.dex*3582357742:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes7.dex*1319860673:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes8.dex*3050564850:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes9.dex*3802833555:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes10.dex*2813494147:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes11.dex*4219401486:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes12.dex*659451162:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes13.dex*3470666919:/data/app/~~9nNXaZzvFfsXD-nfVZhZFA==/io.appium.uiautomator2.server-kYuUDp-FlM8I6ZCZm9dCNw==/base.apk!classes14.dex*3636932523])
+04-10 07:56:49.859 28255 28255 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+04-10 07:56:49.860 28255 28255 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+04-10 07:56:49.860 28255 28255 I MonitoringInstr: Instrumentation started!
+04-10 07:56:49.902 28255 28255 V TestEventClient: No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+04-10 07:56:49.915 28255 28272 I UsageTrackerFacilitator: Usage tracking disabled
+04-10 07:56:49.919 28255 28272 I TestRequestBuilder: Scanning classpath to find tests in paths [/data/app/~~QzrznTls4YMDcFuvkIkHvQ==/io.appium.uiautomator2.server.test-FOZwjUUAJz_VKk2bGm3WYg==/base.apk]
+04-10 07:56:49.920 28255 28272 W tomator2.serve: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+04-10 07:56:50.007 28255 28272 D TestExecutor: Adding listener androidx.test.internal.runner.listener.LogRunListener
+04-10 07:56:50.007 28255 28272 D TestExecutor: Adding listener androidx.test.internal.runner.listener.InstrumentationResultPrinter
+04-10 07:56:50.007 28255 28272 D TestExecutor: Adding listener androidx.test.internal.runner.listener.ActivityFinisherRunListener
+04-10 07:56:50.010 28255 28272 I TestRunner: run started: 1 tests
+04-10 07:56:50.014 28255 28272 I TestRunner: started: startServer(io.appium.uiautomator2.server.test.AppiumUiAutomator2Server)
+04-10 07:56:50.019 28255 28272 I appium  : [AppiumUiAutomator2Server] Starting Server
+04-10 07:56:50.670   454   454 E adbd    : failed to connect to socket 'tcp:6790': Connection refused
+04-10 07:56:51.021 28255 28272 I appium  : Starting MJPEG Server
+04-10 07:56:51.054 12660 12660 D BatterySaverPolicy: accessibility changed to true, updating policy.
+04-10 07:56:51.054 13674 13806 I A       : NGA disabled due to not being eligible.
+04-10 07:56:51.055 28255 28274 V UiAutomation: Init UiAutomation@4ebfdbb[id=162, flags=0]
+04-10 07:56:51.063 28255 28272 I appium  : MJPEG Server started
+04-10 07:56:51.065 28255 28275 I appium  : ServerSocket created on port 7810
+04-10 07:56:51.079 28255 28272 I appium  : AndroidServer created on port 6790
+04-10 07:56:51.080 28255 28272 I appium  : io.appium.uiautomator2.server started:
+04-10 07:56:51.085 28255 28277 I appium  : Started UiAutomator2 io.appium.uiautomator2.http io.appium.uiautomator2.server on port 6790
+04-10 07:56:51.107 28255 28278 W tomator2.serve: Accessing hidden method Lsun/misc/VM;->maxDirectMemory()J (unsupported, reflection, allowed)
+04-10 07:56:51.117 28255 28278 W tomator2.serve: Accessing hidden field Lsun/nio/ch/SelectorImpl;->selectedKeys:Ljava/util/Set; (unsupported, reflection, allowed)
+04-10 07:56:51.118 28255 28278 W tomator2.serve: Accessing hidden field Lsun/nio/ch/SelectorImpl;->publicSelectedKeys:Ljava/util/Set; (unsupported, reflection, allowed)
+04-10 07:56:51.146 28255 28255 W Thread-5: type=1400 audit(0.0:511): avc: denied { read } for name="somaxconn" dev="proc" ino=974473 scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:proc_net:s0 tclass=file permissive=0 app=io.appium.uiautomator2.server
+04-10 07:56:51.717 28255 28280 I appium  : channel read: GET /wd/hub/status
+04-10 07:56:51.718 28255 28280 I appium  : Status command
+04-10 07:56:51.735 28255 28280 I appium  : AppiumResponse: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+04-10 07:56:51.743 28255 28280 I appium  : channel read: POST /wd/hub/session
+04-10 07:56:51.743 28255 28280 I appium  : NewSession command
+04-10 07:56:51.755 28255 28280 W tomator2.serve: Accessing hidden field Landroid/app/UiAutomation;->mOnAccessibilityEventListener:Landroid/app/UiAutomation$OnAccessibilityEventListener; (max-target-o, reflection, allowed)
+04-10 07:56:51.755 28255 28280 I appium  : Created the new session with id b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011 and capabilities {appPackage=ru.otus.wishlist, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, clearDeviceLogsOnStart=true, deviceName=emulator-5554, platform=LINUX, deviceUDID=emulator-5554, appActivity=ru.otus.wishlist.MainActivity, desired={platformName=ANDROID, noReset=true, clearDeviceLogsOnStart=true, appActivity=ru.otus.wishlist.MainActivity, deviceName=emulator-5554, automationName=UIAutomator2, appPackage=ru.otus.wishlist}, webStorageEnabled=false, locationContextEnabled=false, automationName=UIAutomator2, takesScreenshot=true, javascriptEnabled=true, platformName=ANDROID}
+04-10 07:56:51.758 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"pl…
+04-10 07:56:51.774 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/appium/device/info
+04-10 07:56:51.774 28255 28280 I appium  : GetDeviceInfo command
+04-10 07:56:51.781 28255 28280 W tomator2.serve: Accessing hidden field Landroid/net/NetworkCapabilities;->mSignalStrength:I (max-target-p, reflection, allowed)
+04-10 07:56:51.781 28255 28280 W tomator2.serve: Accessing hidden field Landroid/net/NetworkCapabilities;->mSSID:Ljava/lang/String; (max-target-o, reflection, allowed)
+04-10 07:56:51.787 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"androidId":"ab607f95f407aa65","apiVersion":"31","bluetooth":{"state":"ON"},"brand":"google","carrierName":"T-Mobile","displayDensity":440,"locale":"en_US","manufacturer":"Google","model":"sdk_gphone64_x86_64","networks":[{"capabilities":{…
+04-10 07:56:51.875 12660 13524 I ActivityManager: Force stopping ru.otus.wishlist appid=10145 user=0: from pid 28286
+04-10 07:56:51.881 12988 12988 D CarrierSvcBindHelper: No carrier app for: 0
+04-10 07:56:52.128 12660 13524 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ru.otus.wishlist/.MainActivity} from uid 2000
+04-10 07:56:52.129 12660 13524 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=211 attached=false
+04-10 07:56:52.133 12660 13524 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10145; state: DISABLED
+04-10 07:56:52.135 12660 13524 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10145; state: DISABLED
+04-10 07:56:52.136 12660 13524 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10145; state: DISABLED
+04-10 07:56:52.140 12833 12894 D PhoneStartingWindowTypeAlgorithm: preferredStartingWindowType newTask:true taskSwitch:true processRunning:false allowTaskSnapshot:true activityCreated:false useEmptySplashScreen:true legacySplashScreen:false topIsHome:false
+04-10 07:56:52.140 12833 12894 D StartingSurfaceDrawer: addSplashScreen ru.otus.wishlist theme=7f1302d7 task=211 suggestType=3
+04-10 07:56:52.142 12833 12896 D StartingSurfaceDrawer: window attributes color: fff0f0f0 icon null duration 0 brandImage null
+04-10 07:56:52.144 12833 12896 D SplashScreenView: Build android.window.SplashScreenView{b7f9d10 V.E...... ......ID 0,0-0,0}
+04-10 07:56:52.144 12833 12896 D SplashScreenView: Icon: view: null drawable: null size: 0
+04-10 07:56:52.144 12833 12896 D SplashScreenView: Branding: view: android.view.View{190f009 G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+04-10 07:56:52.148 12833 12896 D StartingSurfaceDrawer: fillViewWithIcon surfaceWindowView android.window.SplashScreenView{b7f9d10 V.E...... ......ID 0,0-0,0}
+04-10 07:56:52.154 12660 12685 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10145; state: DISABLED
+04-10 07:56:52.154 12660 12685 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10145; state: DISABLED
+04-10 07:56:52.154 12660 12685 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10145; state: DISABLED
+04-10 07:56:52.154 12660 12685 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10145; state: ENABLED
+04-10 07:56:52.155 12660 12694 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10145; state: ENABLED
+04-10 07:56:52.159 12588 12588 D Zygote  : Forked child process 28289
+04-10 07:56:52.163 12660 12694 I ActivityManager: Start proc 28289:ru.otus.wishlist/u0a145 for pre-top-activity {ru.otus.wishlist/ru.otus.wishlist.MainActivity}
+04-10 07:56:52.167 28289 28289 I u.otus.wishlis: Late-enabling -Xcheck:jni
+04-10 07:56:52.172   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f1cec000 0x3f2690000]
+04-10 07:56:52.183 28289 28289 W u.otus.wishlis: Unexpected CPU variant for X86 using defaults: x86_64
+04-10 07:56:52.188   454   473 I adbd    : jdwp connection from 28289
+04-10 07:56:52.208 28289 28289 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10145; state: ENABLED
+04-10 07:56:52.222 28289 28289 V GraphicsEnvironment: ANGLE Developer option for 'ru.otus.wishlist' set to: 'default'
+04-10 07:56:52.224 28289 28289 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+04-10 07:56:52.228 28289 28289 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+04-10 07:56:52.230 28289 28289 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+04-10 07:56:52.264 13463 13463 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+04-10 07:56:52.264 13463 13463 E HwDetectorWithState: a: 3
+04-10 07:56:52.287   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f4000000 0x3f49a4000]
+04-10 07:56:52.324 28289 28308 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+04-10 07:56:52.325 28289 28308 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+04-10 07:56:52.328 28289 28308 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+04-10 07:56:52.362   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f8000000 0x3f89a4000]
+04-10 07:56:52.367 13105 13579 D EGL_emulation: app_time_stats: avg=925.13ms min=44.75ms max=4385.45ms count=5
+04-10 07:56:52.425 28289 28289 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+04-10 07:56:52.471 12833 12920 D EGL_emulation: app_time_stats: avg=2370.94ms min=97.79ms max=4644.08ms count=2
+04-10 07:56:52.516 12833 12920 D EGL_emulation: app_time_stats: avg=1043.91ms min=102.69ms max=4635.42ms count=5
+04-10 07:56:52.733 12660 13672 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+04-10 07:56:52.733 12660 13672 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+04-10 07:56:52.735 12660 12660 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@b4b87b2
+04-10 07:56:52.741 13674 13674 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=145, right=0, bottom=132}
+04-10 07:56:52.742 13674 13674 I A       : onApplyWindowInsets: Adjusting for display cutouts. Safe insets: left=0, top=136, right=0, bottom=0
+04-10 07:56:52.744 13674 13674 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=145, right=0, bottom=132}
+04-10 07:56:52.760 28289 28289 W u.otus.wishlis: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+04-10 07:56:52.832 28289 28289 W ResourceType: Bad XML block: no root element node found
+04-10 07:56:53.130 12592 28316 D resolv  : GetAddrInfoHandler::run: {103 103 103 983143 10145 0}
+04-10 07:56:53.132 12592 28316 D resolv  : resolv_getaddrinfo: explore_fqdn(): ai_family=0 ai_socktype=1 ai_protocol=6
+04-10 07:56:53.134 12592 28318 D resolv  : doQuery: (1, 1)
+04-10 07:56:53.134 12592 28317 D resolv  : doQuery: (1, 28)
+04-10 07:56:53.134 12592 28317 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+04-10 07:56:53.134 12592 28317 D resolv  : res_nsend
+04-10 07:56:53.134 12592 28317 I resolv  : resolv_cache_lookup: lookup
+04-10 07:56:53.134 12592 28317 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x790037b54190
+04-10 07:56:53.134 12592 28317 D resolv  : doQuery: rcode=0, ancount=0
+04-10 07:56:53.135 12592 28318 D resolv  : res_nmkquery: (QUERY, IN, A)
+04-10 07:56:53.136 12592 28318 D resolv  : res_nsend
+04-10 07:56:53.137 12592 28318 I resolv  : resolv_cache_lookup: lookup
+04-10 07:56:53.137 12592 28318 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x790027b561d0
+04-10 07:56:53.138 12592 28318 D resolv  : doQuery: rcode=0, ancount=1
+04-10 07:56:53.139 12592 28316 I ResolverController: No valid NAT64 prefix (103, <unspecified>/0)
+04-10 07:56:53.143 28289 28289 I Choreographer: Skipped 51 frames!  The application may be doing too much work on its main thread.
+04-10 07:56:53.189 28289 28307 D HostConnection: createUnique: call
+04-10 07:56:53.224 28289 28307 D HostConnection: HostConnection::get() New Host Connection established 0x7daa83e64650, tid 28307
+04-10 07:56:53.229 28289 28307 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_1 
+04-10 07:56:53.231   195   195 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+04-10 07:56:53.231 28289 28307 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+04-10 07:56:53.231 28289 28307 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+04-10 07:56:53.269 28289 28307 D EGL_emulation: eglCreateContext: 0x7daa83e65d90: maj 3 min 1 rcv 4
+04-10 07:56:53.408 28289 28307 D EGL_emulation: eglMakeCurrent: 0x7daa83e65d90: ver 3 1 (tinfo 0x7daca79f6080) (first time)
+04-10 07:56:53.446   442   449 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 4619827259835644672: Unsupported (8)
+04-10 07:56:53.447   195   195 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+04-10 07:56:53.447 28289 28307 I Gralloc4: mapper 4.x is not supported
+04-10 07:56:53.448 28289 28307 D HostConnection: createUnique: call
+04-10 07:56:53.449 28289 28307 D HostConnection: HostConnection::get() New Host Connection established 0x7daa83e64dd0, tid 28307
+04-10 07:56:53.450 28289 28307 D goldfish-address-space: allocate: Ask for block of size 0x100
+04-10 07:56:53.450 28289 28307 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3efffe000 size 0x2000
+04-10 07:56:53.451   195   195 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+04-10 07:56:53.451 28289 28307 W Gralloc4: allocator 4.x is not supported
+04-10 07:56:53.453   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f2690000 0x3f3034000]
+04-10 07:56:53.502 28289 28307 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_1 
+04-10 07:56:53.523   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f09a4000 0x3f1348000]
+04-10 07:56:53.575   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f1348000 0x3f1cec000]
+04-10 07:56:53.575 12833 12920 D EGL_emulation: app_time_stats: avg=49.66ms min=17.16ms max=108.96ms count=19
+04-10 07:56:53.843 28289 28289 I Choreographer: Skipped 41 frames!  The application may be doing too much work on its main thread.
+04-10 07:56:53.846 12833 12894 D StartingSurfaceDrawer: Task start finish, remove starting surface for task 211
+04-10 07:56:53.846 12833 12894 V StartingSurfaceDrawer: Removing splash screen window for task: 211
+04-10 07:56:53.854 12660 12682 I ActivityTaskManager: Displayed ru.otus.wishlist/.MainActivity: +1s717ms
+04-10 07:56:53.856 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/appium/device/pixel_ratio
+04-10 07:56:53.857 28255 28280 I appium  : GetDevicePixelRatio command
+04-10 07:56:53.861 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":2.75}
+04-10 07:56:53.871 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/appium/device/system_bars
+04-10 07:56:53.871 28255 28280 I appium  : GetSystemBars command
+04-10 07:56:53.872 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"statusBar":145}}
+04-10 07:56:53.877 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/window/current/size
+04-10 07:56:53.877 28255 28280 I appium  : GetDeviceSize command
+04-10 07:56:53.877 28255 28280 I appium  : Get window size of the device
+04-10 07:56:53.878 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"height":2072,"width":1080}}
+04-10 07:56:53.900 13198 16674 I FontLog : Received query Noto Color Emoji Compat, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+04-10 07:56:53.900 13198 16674 I FontLog : Query [emojicompat-emoji-font] resolved to {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+04-10 07:56:53.901 13198 16674 I FontLog : Fetch {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+04-10 07:56:53.909 28289 28304 I OpenGLRenderer: Davey! duration=1538ms; Flags=1, FrameTimelineVsyncId=216919, IntendedVsync=53337457446836, Vsync=53338307446802, InputEventId=0, HandleInputStart=53338308717340, AnimationStart=53338308742940, PerformTraversalsStart=53338308980240, DrawStart=53338687394840, FrameDeadline=53337474113502, FrameInterval=53338308596140, FrameStartTime=16666666, SyncQueued=53338693878440, SyncStart=53338739561040, IssueDrawCommandsStart=53338753245440, SwapBuffers=53338984147140, FrameCompleted=53339041312940, DequeueBufferDuration=15300, QueueBufferDuration=658600, GpuCompleted=53339041312940, SwapBuffersCompleted=53339005293840, DisplayPresentTime=0, 
+04-10 07:56:53.930 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/title
+04-10 07:56:53.933 28255 28280 I appium  : AppiumResponse: {"sessionId":null,"value":{"error":"unknown command","message":"The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource","stacktrace":"io.appium.uiautomator2.common.exceptions.UnknownCommandException: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:75)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)\n\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)\n\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)\n\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)\n\tat io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)\n\tat java.lang.Thread.run(Thread.java:920)\n"}}
+04-10 07:56:53.933 13198 16674 I FontLog : Pulling font file for id = 230, cache size = 6 [CONTEXT service_id=132 ]
+04-10 07:56:53.951 28289 28304 I OpenGLRenderer: Davey! duration=745ms; Flags=0, FrameTimelineVsyncId=217016, IntendedVsync=53338324113468, Vsync=53339007446774, InputEventId=0, HandleInputStart=53339008480840, AnimationStart=53339008494240, PerformTraversalsStart=53339009110840, DrawStart=53339009209740, FrameDeadline=53338357446800, FrameInterval=53339008269040, FrameStartTime=16666666, SyncQueued=53339010914640, SyncStart=53339012738040, IssueDrawCommandsStart=53339012807440, SwapBuffers=53339029959140, FrameCompleted=53339071646240, DequeueBufferDuration=14000, QueueBufferDuration=920100, GpuCompleted=53339071646240, SwapBuffersCompleted=53339050143240, DisplayPresentTime=0, 
+04-10 07:56:53.955 13198 16674 I FontLog : Pulling font file for id = 230, cache size = 6 [CONTEXT service_id=132 ]
+04-10 07:56:54.004 13314 13314 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+04-10 07:56:54.005 13314 13314 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+04-10 07:56:54.007 13314 13314 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+04-10 07:56:54.080 12660 12660 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@f17cc40
+04-10 07:56:54.145 28289 28289 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10145; state: ENABLED
+04-10 07:56:54.185   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f65bf000 0x3f6a01000]
+04-10 07:56:54.260   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f6a01000 0x3f6e43000]
+04-10 07:56:54.314 28289 28298 I u.otus.wishlis: Background young concurrent copying GC freed 57994(5432KB) AllocSpace objects, 6(248KB) LOS objects, 79% free, 6356KB/30MB, paused 699us,41us total 129.877ms
+04-10 07:56:54.332   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f6e43000 0x3f7285000]
+04-10 07:56:54.445 12660 13672 W InputManager-JNI: Input channel object 'ace979b Splash Screen ru.otus.wishlist (client)' was disposed without first being removed with the input manager!
+04-10 07:56:54.638 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:54.639 28255 28280 I appium  : FindElement command
+04-10 07:56:54.643 28255 28280 I appium  : method: 'id', selector: 'android:id/button1'
+04-10 07:56:54.645 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:54.694 12833 12920 D EGL_emulation: app_time_stats: avg=741.11ms min=89.08ms max=2045.15ms count=3
+04-10 07:56:54.741 12833 12920 D EGL_emulation: app_time_stats: avg=83.09ms min=17.45ms max=337.56ms count=13
+04-10 07:56:55.057 28255 28280 W tomator2.serve: Accessing hidden field Landroid/view/accessibility/AccessibilityNodeInfo;->mSourceNodeId:J (unsupported, reflection, allowed)
+04-10 07:56:55.060 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0877-ffff-ffff00000057","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0877-ffff-ffff00000057"}}
+04-10 07:56:55.068 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:55.068 28255 28280 I appium  : FindElement command
+04-10 07:56:55.068 28255 28280 I appium  : method: 'id', selector: 'android:id/button1'
+04-10 07:56:55.069 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:55.079 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0877-ffff-ffff00000057","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0877-ffff-ffff00000057"}}
+04-10 07:56:55.088 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0877-ffff-ffff00000057/attribute/displayed
+04-10 07:56:55.091 28255 28280 I appium  : GetElementAttribute command
+04-10 07:56:55.096 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:56:55.103 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0877-ffff-ffff00000057/click
+04-10 07:56:55.103 28255 28280 I appium  : Click command
+04-10 07:56:55.160 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:55.160 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:56:55.169 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:55.169 28255 28280 I appium  : FindElement command
+04-10 07:56:55.170 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/username_text_input'
+04-10 07:56:55.170 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:55.246 28289 28307 D OpenGLRenderer: endAllActiveAnimators on 0x7dab03eac940 (RippleDrawable) with handle 0x7daa13ea4b60
+04-10 07:56:55.248 12660 13672 W InputManager-JNI: Input channel object '7a59aba ru.otus.wishlist/ru.otus.wishlist.MainActivity (client)' was disposed without first being removed with the input manager!
+04-10 07:56:55.254 28255 28280 E QueryController: Got null root node from accessibility - Retrying...
+04-10 07:56:55.282 13314 13314 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+04-10 07:56:55.282 13314 13314 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+04-10 07:56:55.284 13314 13314 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+04-10 07:56:55.350 28289 28307 D EGL_emulation: app_time_stats: avg=118.07ms min=1.27ms max=491.78ms count=12
+04-10 07:56:55.518 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff0000005f","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff0000005f"}}
+04-10 07:56:55.526 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff0000005f/attribute/displayed
+04-10 07:56:55.528 28255 28280 I appium  : GetElementAttribute command
+04-10 07:56:55.911 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:56:55.920 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:55.921 28255 28280 I appium  : FindElement command
+04-10 07:56:55.922 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/username_text_input'
+04-10 07:56:55.924 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:55.933 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff0000005f","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff0000005f"}}
+04-10 07:56:55.940 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff0000005f/value
+04-10 07:56:55.940 28255 28280 I appium  : SendKeysToElement command
+04-10 07:56:55.980   193   193 I servicemanager: Notifying apexservice they have clients: 0
+04-10 07:56:55.986   193   193 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+04-10 07:56:55.965     0     0 I AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification apexservice has clients: 0
+04-10 07:56:55.968     0     0 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+04-10 07:56:55.971     0     0 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
+04-10 07:56:55.974     0     0 I init    : Service 'apexd' (pid 27734) exited with status 0 oneshot service took 194.552002 seconds in background
+04-10 07:56:55.978     0     0 I init    : Sending signal 9 to service 'apexd' (pid 27734) process group...
+04-10 07:56:55.979     0     0 I libprocessgroup: Successfully killed process cgroup uid 0 pid 27734 in 0ms
+04-10 07:56:56.461 13314 13314 I ShortcutsDataManager: ShortcutsDataManager.onContentChanged():73 onContentChanged()
+04-10 07:56:56.466 12660 12660 D AutofillInlineSuggestionsRequestSession: onCreateInlineSuggestionsRequestLocked called: 1073741824@651332571
+04-10 07:56:56.468 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:56:56.470 12660 12811 D AutofillInlineSuggestionsRequestSession: onInlineSuggestionsSessionInvalidated() called.
+04-10 07:56:56.472 28289 28289 D CompatibilityChangeReporter: Compat change id reported: 163400105; UID 10145; state: ENABLED
+04-10 07:56:56.480 28289 28289 I AssistStructure: Flattened final assist data: 3332 bytes, containing 1 windows, 24 views
+04-10 07:56:56.482 28289 28307 D EGL_emulation: app_time_stats: avg=211.56ms min=18.87ms max=519.47ms count=5
+04-10 07:56:56.484 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:56.484 28255 28280 I appium  : FindElement command
+04-10 07:56:56.485 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/password_text_input'
+04-10 07:56:56.486 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:56.752 12814 12814 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+04-10 07:56:57.034 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff0000006d","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff0000006d"}}
+04-10 07:56:57.041 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff0000006d/attribute/displayed
+04-10 07:56:57.042 28255 28280 I appium  : GetElementAttribute command
+04-10 07:56:57.046 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:56:57.053 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:57.053 28255 28280 I appium  : FindElement command
+04-10 07:56:57.054 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/password_text_input'
+04-10 07:56:57.054 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:57.062 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff0000006d","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff0000006d"}}
+04-10 07:56:57.070 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff0000006d/value
+04-10 07:56:57.071 28255 28280 I appium  : SendKeysToElement command
+04-10 07:56:57.595 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:56:57.603 28289 28307 D EGL_emulation: app_time_stats: avg=67.97ms min=17.23ms max=507.84ms count=15
+04-10 07:56:57.606 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:57.606 28255 28280 I appium  : FindElement command
+04-10 07:56:57.609 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/log_in_button'
+04-10 07:56:57.609 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:58.105 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff0000007a","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff0000007a"}}
+04-10 07:56:58.114 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff0000007a/attribute/displayed
+04-10 07:56:58.114 28255 28280 I appium  : GetElementAttribute command
+04-10 07:56:58.134 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:56:58.143 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:58.143 28255 28280 I appium  : FindElement command
+04-10 07:56:58.145 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/log_in_button'
+04-10 07:56:58.145 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:58.173 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff0000007a","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff0000007a"}}
+04-10 07:56:58.180 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff0000007a/attribute/displayed
+04-10 07:56:58.180 28255 28280 I appium  : GetElementAttribute command
+04-10 07:56:58.184 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:56:58.190 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff0000007a/click
+04-10 07:56:58.191 28255 28280 I appium  : Click command
+04-10 07:56:58.197 12660 13524 D CompatibilityChangeReporter: Compat change id reported: 158002302; UID 10145; state: ENABLED
+04-10 07:56:58.250 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:58.251 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:56:58.265 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:58.265 28255 28280 I appium  : FindElement command
+04-10 07:56:58.266 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/wishlists'
+04-10 07:56:58.267 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:58.342 12589 12645 D AudioFlinger: mixer(0x7a33667bfa70) throttle end: throttle time(19)
+04-10 07:56:58.353 28289 28332 D ProfileInstaller: Installing profile for ru.otus.wishlist
+04-10 07:56:58.470 28289 28297 I u.otus.wishlis: JIT allocated 77KB for compiled code of void android.view.View.<init>(android.content.Context, android.util.AttributeSet, int, int)
+04-10 07:56:58.500 28255 28280 W ByMatcher: Node returned null child: android.view.accessibility.AccessibilityNodeInfo@1ce90; boundsInParent: Rect(0, 0 - 1080, 198); boundsInScreen: Rect(0, 145 - 1080, 343); packageName: ru.otus.wishlist; className: android.widget.LinearLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: ru.otus.wishlist:id/top_app_bar_layout; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: true; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+04-10 07:56:58.500 28255 28280 W ByMatcher: Skipping null child (0 of 1)
+04-10 07:56:58.559 28255 28280 W ByMatcher: Node returned null child: android.view.accessibility.AccessibilityNodeInfo@1d9d3; boundsInParent: Rect(0, 0 - 998, 242); boundsInScreen: Rect(41, 384 - 1039, 626); packageName: ru.otus.wishlist; className: android.widget.LinearLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: ru.otus.wishlist:id/username_text_input_layout; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: true; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+04-10 07:56:58.560 28255 28280 W ByMatcher: Skipping null child (0 of 2)
+04-10 07:56:58.597 28255 28280 W ByMatcher: Skipping null child (1 of 2)
+04-10 07:56:58.633 28289 28307 D EGL_emulation: app_time_stats: avg=37.04ms min=1.41ms max=111.96ms count=23
+04-10 07:56:58.671 28255 28280 W ByMatcher: Node returned null child: android.view.accessibility.AccessibilityNodeInfo@1cacf; boundsInParent: Rect(0, 0 - 1080, 2063); boundsInScreen: Rect(0, 145 - 1080, 2208); packageName: ru.otus.wishlist; className: android.view.ViewGroup; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: true; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+04-10 07:56:58.671 28255 28280 W ByMatcher: Skipping null child (2 of 8)
+04-10 07:56:58.694 28255 28280 W ByMatcher: Skipping null child (3 of 8)
+04-10 07:56:58.723 28255 28280 W ByMatcher: Skipping null child (4 of 8)
+04-10 07:56:58.727 12660 12660 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@d6ab1ef
+04-10 07:56:58.761 28255 28280 W ByMatcher: Skipping null child (5 of 8)
+04-10 07:56:58.798 28255 28280 W ByMatcher: Skipping null child (6 of 8)
+04-10 07:56:58.802 28255 28280 W ByMatcher: Skipping null child (7 of 8)
+04-10 07:56:58.836 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ad","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ad"}}
+04-10 07:56:58.852 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:58.853 28255 28280 I appium  : FindElement command
+04-10 07:56:58.853 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/wishlist_item', contextId: '00000000-0000-0876-ffff-ffff000000ad'
+04-10 07:56:59.304 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000b5","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000b5"}}
+04-10 07:56:59.311 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff000000b5/attribute/displayed
+04-10 07:56:59.313 28255 28280 I appium  : GetElementAttribute command
+04-10 07:56:59.318 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:56:59.324 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:59.325 28255 28280 I appium  : FindElement command
+04-10 07:56:59.328 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/wishlists'
+04-10 07:56:59.328 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:59.338 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ad","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ad"}}
+04-10 07:56:59.348 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:59.348 28255 28280 I appium  : FindElement command
+04-10 07:56:59.349 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/wishlist_item', contextId: '00000000-0000-0876-ffff-ffff000000ad'
+04-10 07:56:59.354 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000b5","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000b5"}}
+04-10 07:56:59.361 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:59.361 28255 28280 I appium  : FindElement command
+04-10 07:56:59.362 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/title', contextId: '00000000-0000-0876-ffff-ffff000000b5'
+04-10 07:56:59.365 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000b6","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000b6"}}
+04-10 07:56:59.370 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff000000b6/attribute/displayed
+04-10 07:56:59.371 28255 28280 I appium  : GetElementAttribute command
+04-10 07:56:59.373 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:56:59.381 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:59.381 28255 28280 I appium  : FindElement command
+04-10 07:56:59.381 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/wishlists'
+04-10 07:56:59.382 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:59.393 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ad","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ad"}}
+04-10 07:56:59.400 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:59.401 28255 28280 I appium  : FindElement command
+04-10 07:56:59.402 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/wishlist_item', contextId: '00000000-0000-0876-ffff-ffff000000ad'
+04-10 07:56:59.406 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000b5","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000b5"}}
+04-10 07:56:59.415 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:59.415 28255 28280 I appium  : FindElement command
+04-10 07:56:59.416 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/title', contextId: '00000000-0000-0876-ffff-ffff000000b5'
+04-10 07:56:59.423 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000b6","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000b6"}}
+04-10 07:56:59.431 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff000000b6/attribute/displayed
+04-10 07:56:59.431 28255 28280 I appium  : GetElementAttribute command
+04-10 07:56:59.436 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:56:59.443 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff000000b6/click
+04-10 07:56:59.443 28255 28280 I appium  : Click command
+04-10 07:56:59.493 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:59.494 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:56:59.523 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:56:59.523 28255 28280 I appium  : FindElement command
+04-10 07:56:59.524 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/add_button'
+04-10 07:56:59.524 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:56:59.635 28289 28307 D EGL_emulation: app_time_stats: avg=103.70ms min=1.20ms max=701.63ms count=9
+04-10 07:57:00.001 12660 12692 W ProcessStats: Tracking association SourceState{6713a1b system/1000 BTopFgs #21110} whose proc state 2 is better than process ProcessState{9cc27b8 com.google.android.gms.persistent/10101 pkg=com.google.android.gms} proc state 3 (23 skipped)
+04-10 07:57:00.039 12833 12920 D EGL_emulation: app_time_stats: avg=890.76ms min=84.42ms max=4567.57ms count=6
+04-10 07:57:00.624 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ce","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ce"}}
+04-10 07:57:00.631 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff000000ce/attribute/displayed
+04-10 07:57:00.632 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:00.636 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:00.645 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:00.645 28255 28280 I appium  : FindElement command
+04-10 07:57:00.647 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/add_button'
+04-10 07:57:00.648 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:00.658 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ce","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ce"}}
+04-10 07:57:00.664 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff000000ce/attribute/displayed
+04-10 07:57:00.664 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:00.668 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:00.674 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff000000ce/click
+04-10 07:57:00.674 28255 28280 I appium  : Click command
+04-10 07:57:00.731 28289 28307 D EGL_emulation: app_time_stats: avg=365.03ms min=38.32ms max=1017.96ms count=3
+04-10 07:57:00.744 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:00.746 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:00.754 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:00.754 28255 28280 I appium  : FindElement command
+04-10 07:57:00.755 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_edit_title'
+04-10 07:57:00.755 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:00.806 28289 28297 I u.otus.wishlis: JIT allocated 77KB for compiled code of void android.view.View.<init>(android.content.Context, android.util.AttributeSet, int, int)
+04-10 07:57:00.822 12589 12645 D AudioFlinger: mixer(0x7a33667bfa70) throttle end: throttle time(6)
+04-10 07:57:00.872 12660 13524 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10145; state: DISABLED
+04-10 07:57:01.031 12833 12920 D EGL_emulation: app_time_stats: avg=1048.28ms min=91.39ms max=5510.29ms count=6
+04-10 07:57:01.068   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f65bf000 0x3f71ce000]
+04-10 07:57:01.242   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f71ce000 0x3f7ddd000]
+04-10 07:57:01.309   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f4fc3000 0x3f5bd2000]
+04-10 07:57:01.505 28255 28280 W ByMatcher: Node returned null child: android.view.accessibility.AccessibilityNodeInfo@80007534; boundsInParent: Rect(0, 0 - 1080, 2340); boundsInScreen: Rect(0, 0 - 1080, 2340); packageName: ru.otus.wishlist; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: true; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+04-10 07:57:01.505 28255 28280 W ByMatcher: Skipping null child (0 of 2)
+04-10 07:57:01.506 28255 28280 W ByMatcher: Skipping null child (1 of 2)
+04-10 07:57:01.508 28289 28289 I Choreographer: Skipped 36 frames!  The application may be doing too much work on its main thread.
+04-10 07:57:01.534 28255 28280 W ByMatcher: Node returned null child: android.view.accessibility.AccessibilityNodeInfo@80007534; boundsInParent: Rect(0, 0 - 1080, 2340); boundsInScreen: Rect(0, 0 - 1080, 2340); packageName: ru.otus.wishlist; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: true; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+04-10 07:57:01.535 28255 28280 W ByMatcher: Skipping null child (0 of 2)
+04-10 07:57:01.536 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:70)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)\n\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)\n\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)\n\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)\n\tat io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)\n\tat java.lang.Thread.run(Thread.java:920)\n"}}
+04-10 07:57:01.689 28289 28327 I OpenGLRenderer: Davey! duration=743ms; Flags=0, FrameTimelineVsyncId=217456, IntendedVsync=53346057446492, Vsync=53346657446468, InputEventId=0, HandleInputStart=53346674056540, AnimationStart=53346674070340, PerformTraversalsStart=53346675014640, DrawStart=53346743313940, FrameDeadline=53346090779824, FrameInterval=53346673625640, FrameStartTime=16666666, SyncQueued=53346744053040, SyncStart=53346758891340, IssueDrawCommandsStart=53346758961340, SwapBuffers=53346759810040, FrameCompleted=53346816239640, DequeueBufferDuration=11200, QueueBufferDuration=250200, GpuCompleted=53346816239640, SwapBuffersCompleted=53346779081240, DisplayPresentTime=30064771073, 
+04-10 07:57:01.715 13314 13314 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+04-10 07:57:01.716 13314 13314 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+04-10 07:57:01.717 13314 13314 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+04-10 07:57:01.718 13314 13314 I ShortcutsDataManager: AbstractContentDataManager.startImportContentTask():235 startImportContentTask()
+04-10 07:57:01.719 13314 13602 I ShortcutsDataManager: AbstractContentDataManager$ImportContentTask.doInBackground():249 doInBackground()
+04-10 07:57:01.720 13314 13602 I PersonalDictionaryDataHandler: PersonalDictionaryDataHandler.beginProcess():111 LanguageTags = [en-US]
+04-10 07:57:01.735 28289 28307 D EGL_emulation: app_time_stats: avg=80.36ms min=24.90ms max=242.18ms count=11
+04-10 07:57:01.741 11426 11435 W d.process.acor: Reducing the number of considered missed Gc histogram windows from 309 to 100
+04-10 07:57:01.741 13314 13602 I ShortcutsDataManager: AbstractContentDataManager.importRecords():339 importRecords() : Success : Count = 0
+04-10 07:57:01.747 13314 13602 I ShortcutsDataManager: AbstractContentDataManager.importContentData():289 importContentData() : Ending import process
+04-10 07:57:01.748 13314 15962 I Delight5Decoder: Delight5DecoderWrapper.unloadLanguageModel():820 unloadLanguageModel() : 4, version [n/a]
+04-10 07:57:01.763 13314 13602 I PersonalLanguageModelUpdater: PersonalLanguageModelUpdater$UpdateOperation.performInternal():162 run() : Added 0 words and 0 shortcuts
+04-10 07:57:01.763 13314 13602 I DynamicLanguageModelOperation: DynamicLanguageModelOperation.perform():38 perform() : 4 : cny : Completed
+04-10 07:57:01.764 13314 13314 I ShortcutsDataManager: AbstractContentDataManager$ImportContentTask.onPostExecute():260 onPostExecute() : Result = [2,0]
+04-10 07:57:01.765 13314 13314 I ShortcutsDataManager: ShortcutsDataManager.onImportFinished():83 onImportFinished() : Result = 2 : Count = 0
+04-10 07:57:01.766 13314 15962 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():614 loadLanguageModel() : 4, version [n/a]
+04-10 07:57:01.769 13314 15962 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():652 Loaded dynamic LM 4.en
+04-10 07:57:02.058 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:02.058 28255 28280 I appium  : FindElement command
+04-10 07:57:02.058 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_edit_title'
+04-10 07:57:02.058 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:02.340 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0878-ffff-ffff000000d9","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0878-ffff-ffff000000d9"}}
+04-10 07:57:02.347 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000d9/attribute/displayed
+04-10 07:57:02.349 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:02.353 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:02.358 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:02.358 28255 28280 I appium  : FindElement command
+04-10 07:57:02.359 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_edit_title'
+04-10 07:57:02.359 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:02.365 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0878-ffff-ffff000000d9","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0878-ffff-ffff000000d9"}}
+04-10 07:57:02.371 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000d9/name
+04-10 07:57:02.373 28255 28280 I appium  : GetName command
+04-10 07:57:02.376 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:02.381 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000d9/text
+04-10 07:57:02.382 28255 28280 I appium  : GetText command
+04-10 07:57:02.387 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"Новый подарок"}
+04-10 07:57:02.394 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:02.394 28255 28280 I appium  : FindElement command
+04-10 07:57:02.397 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/name_input'
+04-10 07:57:02.397 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:02.402 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0878-ffff-ffff000000dc","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0878-ffff-ffff000000dc"}}
+04-10 07:57:02.410 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000dc/attribute/displayed
+04-10 07:57:02.410 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:02.414 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:02.421 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:02.421 28255 28280 I appium  : FindElement command
+04-10 07:57:02.421 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/name_input'
+04-10 07:57:02.422 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:02.427 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0878-ffff-ffff000000dc","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0878-ffff-ffff000000dc"}}
+04-10 07:57:02.434 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000dc/attribute/displayed
+04-10 07:57:02.434 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:02.439 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:02.445 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000dc/clear
+04-10 07:57:02.447 28255 28280 I appium  : Clear command
+04-10 07:57:02.455 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:02.461 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:02.463 28255 28280 I appium  : FindElement command
+04-10 07:57:02.464 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/name_input'
+04-10 07:57:02.464 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:02.961 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0878-ffff-ffff000000dc","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0878-ffff-ffff000000dc"}}
+04-10 07:57:02.969 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000dc/value
+04-10 07:57:02.969 28255 28280 I appium  : SendKeysToElement command
+04-10 07:57:02.980 28289 28307 D EGL_emulation: app_time_stats: avg=205.82ms min=37.21ms max=512.69ms count=7
+04-10 07:57:03.493 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:03.493 13314 13314 I ShortcutsDataManager: ShortcutsDataManager.onContentChanged():73 onContentChanged()
+04-10 07:57:03.504 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:03.504 28255 28280 I appium  : FindElement command
+04-10 07:57:03.504 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/price_input'
+04-10 07:57:03.504 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:04.000 28289 28307 D EGL_emulation: app_time_stats: avg=65.97ms min=2.31ms max=526.93ms count=14
+04-10 07:57:04.007 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0878-ffff-ffff000000e7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0878-ffff-ffff000000e7"}}
+04-10 07:57:04.014 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000e7/attribute/displayed
+04-10 07:57:04.014 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:04.019 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:04.026 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:04.026 28255 28280 I appium  : FindElement command
+04-10 07:57:04.026 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/price_input'
+04-10 07:57:04.027 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:04.035 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0878-ffff-ffff000000e7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0878-ffff-ffff000000e7"}}
+04-10 07:57:04.042 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000e7/attribute/displayed
+04-10 07:57:04.042 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:04.046 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:04.053 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000e7/clear
+04-10 07:57:04.053 28255 28280 I appium  : Clear command
+04-10 07:57:04.060 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:04.085 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:04.085 28255 28280 I appium  : FindElement command
+04-10 07:57:04.087 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/price_input'
+04-10 07:57:04.088 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:04.566 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0878-ffff-ffff000000e7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0878-ffff-ffff000000e7"}}
+04-10 07:57:04.572 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000e7/value
+04-10 07:57:04.573 28255 28280 I appium  : SendKeysToElement command
+04-10 07:57:04.602 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:04.608 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:04.608 28255 28280 I appium  : FindElement command
+04-10 07:57:04.609 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/description_input'
+04-10 07:57:04.609 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:04.689 12814 12814 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+04-10 07:57:05.015 28289 28307 D EGL_emulation: app_time_stats: avg=67.44ms min=18.07ms max=516.25ms count=14
+04-10 07:57:05.109 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0878-ffff-ffff000000f2","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0878-ffff-ffff000000f2"}}
+04-10 07:57:05.116 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000f2/attribute/displayed
+04-10 07:57:05.116 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:05.121 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:05.128 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:05.128 28255 28280 I appium  : FindElement command
+04-10 07:57:05.128 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/description_input'
+04-10 07:57:05.128 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:05.137 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0878-ffff-ffff000000f2","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0878-ffff-ffff000000f2"}}
+04-10 07:57:05.144 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000f2/attribute/displayed
+04-10 07:57:05.144 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:05.148 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:05.155 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000f2/clear
+04-10 07:57:05.155 28255 28280 I appium  : Clear command
+04-10 07:57:05.165 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:05.184 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:05.184 28255 28280 I appium  : FindElement command
+04-10 07:57:05.185 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/description_input'
+04-10 07:57:05.185 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:05.671 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0878-ffff-ffff000000f2","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0878-ffff-ffff000000f2"}}
+04-10 07:57:05.681 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000f2/value
+04-10 07:57:05.684 28255 28280 I appium  : SendKeysToElement command
+04-10 07:57:06.203 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:06.211 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:06.212 28255 28280 I appium  : FindElement command
+04-10 07:57:06.212 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/save_button'
+04-10 07:57:06.213 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:06.222 28289 28307 D EGL_emulation: app_time_stats: avg=196.98ms min=17.90ms max=516.54ms count=6
+04-10 07:57:06.224 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0878-ffff-ffff000000fb","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0878-ffff-ffff000000fb"}}
+04-10 07:57:06.235 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000fb/attribute/displayed
+04-10 07:57:06.235 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:06.705 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:06.712 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:06.713 28255 28280 I appium  : FindElement command
+04-10 07:57:06.713 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/save_button'
+04-10 07:57:06.714 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:06.721 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0878-ffff-ffff000000fb","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0878-ffff-ffff000000fb"}}
+04-10 07:57:06.728 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000fb/attribute/displayed
+04-10 07:57:06.729 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:06.734 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:06.741 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0878-ffff-ffff000000fb/click
+04-10 07:57:06.742 28255 28280 I appium  : Click command
+04-10 07:57:06.828 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:06.986 28289 28307 D OpenGLRenderer: endAllActiveAnimators on 0x7dab03f0d240 (RippleDrawable) with handle 0x7daa13eb07a0
+04-10 07:57:06.988 12660 12811 W InputManager-JNI: Input channel object '1d82022 ru.otus.wishlist/ru.otus.wishlist.MainActivity (client)' was disposed without first being removed with the input manager!
+04-10 07:57:06.994 28289 28289 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10145; state: ENABLED
+04-10 07:57:07.012   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f3723000 0x3f376b000]
+04-10 07:57:07.072   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f376b000 0x3f37b3000]
+04-10 07:57:07.106   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f37b3000 0x3f37fb000]
+04-10 07:57:07.155 28289 28307 D EGL_emulation: app_time_stats: avg=1075.13ms min=36.43ms max=5117.19ms count=5
+04-10 07:57:07.163 13314 13314 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+04-10 07:57:07.163 13314 13314 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+04-10 07:57:07.164 13314 13314 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+04-10 07:57:07.165 13314 13314 I ShortcutsDataManager: AbstractContentDataManager.startImportContentTask():235 startImportContentTask()
+04-10 07:57:07.165 13314 13602 I ShortcutsDataManager: AbstractContentDataManager$ImportContentTask.doInBackground():249 doInBackground()
+04-10 07:57:07.166 13314 13602 I PersonalDictionaryDataHandler: PersonalDictionaryDataHandler.beginProcess():111 LanguageTags = [en-US]
+04-10 07:57:07.183 13314 13602 I ShortcutsDataManager: AbstractContentDataManager.importRecords():339 importRecords() : Success : Count = 0
+04-10 07:57:07.184 13314 13602 I ShortcutsDataManager: AbstractContentDataManager.importContentData():289 importContentData() : Ending import process
+04-10 07:57:07.185 13314 15962 I Delight5Decoder: Delight5DecoderWrapper.unloadLanguageModel():820 unloadLanguageModel() : 4, version [n/a]
+04-10 07:57:07.200 13314 13602 I PersonalLanguageModelUpdater: PersonalLanguageModelUpdater$UpdateOperation.performInternal():162 run() : Added 0 words and 0 shortcuts
+04-10 07:57:07.200 13314 13602 I DynamicLanguageModelOperation: DynamicLanguageModelOperation.perform():38 perform() : 4 : cny : Completed
+04-10 07:57:07.200 13314 15962 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():614 loadLanguageModel() : 4, version [n/a]
+04-10 07:57:07.201 13314 15962 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():652 Loaded dynamic LM 4.en
+04-10 07:57:07.202 13314 13314 I ShortcutsDataManager: AbstractContentDataManager$ImportContentTask.onPostExecute():260 onPostExecute() : Result = [2,0]
+04-10 07:57:07.202 13314 13314 I ShortcutsDataManager: ShortcutsDataManager.onImportFinished():83 onImportFinished() : Result = 2 : Count = 0
+04-10 07:57:07.492 12833 12920 D EGL_emulation: app_time_stats: avg=1567.60ms min=53.81ms max=6050.26ms count=4
+04-10 07:57:07.718 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:07.725 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:07.726 28255 28280 I appium  : FindElement command
+04-10 07:57:07.726 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:07.726 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:07.737 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:07.748 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff000000c7/attribute/displayed
+04-10 07:57:07.748 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:07.757 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:07.765 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:07.765 28255 28280 I appium  : FindElement command
+04-10 07:57:07.766 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:07.766 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:07.773 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:07.779 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/elements
+04-10 07:57:07.780 28255 28280 I appium  : FindElements command
+04-10 07:57:07.780 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:07.786 28255 28280 I appium  : Caching 1 found element
+04-10 07:57:07.786 28255 28280 I appium  : Cached 1 element
+04-10 07:57:07.787 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":[{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ff","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ff"}]}
+04-10 07:57:07.796 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:07.796 28255 28280 I appium  : FindElement command
+04-10 07:57:07.796 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:07.797 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:07.806 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:07.812 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:07.812 28255 28280 I appium  : FindElement command
+04-10 07:57:07.814 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:07.818 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ff","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ff"}}
+04-10 07:57:07.826 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff000000ff/attribute/displayed
+04-10 07:57:07.826 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:07.831 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:07.839 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:07.841 28255 28280 I appium  : FindElement command
+04-10 07:57:07.842 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:07.843 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:07.851 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:07.860 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:07.860 28255 28280 I appium  : FindElement command
+04-10 07:57:07.861 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:07.869 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ff","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ff"}}
+04-10 07:57:07.878 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:07.878 28255 28280 I appium  : FindElement command
+04-10 07:57:07.879 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/title', contextId: '00000000-0000-0876-ffff-ffff000000ff'
+04-10 07:57:07.885 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff00000100","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff00000100"}}
+04-10 07:57:07.893 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff00000100/name
+04-10 07:57:07.894 28255 28280 I appium  : GetName command
+04-10 07:57:07.898 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:07.905 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff00000100/text
+04-10 07:57:07.905 28255 28280 I appium  : GetText command
+04-10 07:57:07.910 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"Новый подарок"}
+04-10 07:57:07.917 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:07.918 28255 28280 I appium  : FindElement command
+04-10 07:57:07.919 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:07.919 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:07.930 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:07.936 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:07.937 28255 28280 I appium  : FindElement command
+04-10 07:57:07.939 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:07.944 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ff","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ff"}}
+04-10 07:57:07.952 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff000000ff/attribute/displayed
+04-10 07:57:07.952 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:07.955 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:07.962 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:07.962 28255 28280 I appium  : FindElement command
+04-10 07:57:07.964 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:07.965 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:07.972 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:07.979 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:07.979 28255 28280 I appium  : FindElement command
+04-10 07:57:07.979 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:07.985 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ff","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ff"}}
+04-10 07:57:07.991 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:07.991 28255 28280 I appium  : FindElement command
+04-10 07:57:07.992 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/price', contextId: '00000000-0000-0876-ffff-ffff000000ff'
+04-10 07:57:07.997 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff00000102","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff00000102"}}
+04-10 07:57:08.003 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff00000102/name
+04-10 07:57:08.003 28255 28280 I appium  : GetName command
+04-10 07:57:08.008 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:08.014 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff00000102/text
+04-10 07:57:08.014 28255 28280 I appium  : GetText command
+04-10 07:57:08.018 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"555 ₽"}
+04-10 07:57:08.025 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:08.025 28255 28280 I appium  : FindElement command
+04-10 07:57:08.025 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:08.025 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:08.033 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:08.039 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:08.040 28255 28280 I appium  : FindElement command
+04-10 07:57:08.042 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:08.047 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ff","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ff"}}
+04-10 07:57:08.054 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff000000ff/attribute/displayed
+04-10 07:57:08.054 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:08.058 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:08.064 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:08.065 28255 28280 I appium  : FindElement command
+04-10 07:57:08.066 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:08.067 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:08.076 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:08.081 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:08.082 28255 28280 I appium  : FindElement command
+04-10 07:57:08.082 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:08.089 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ff","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ff"}}
+04-10 07:57:08.095 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:08.096 28255 28280 I appium  : FindElement command
+04-10 07:57:08.097 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/subtitle', contextId: '00000000-0000-0876-ffff-ffff000000ff'
+04-10 07:57:08.101 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff00000101","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff00000101"}}
+04-10 07:57:08.108 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff00000101/name
+04-10 07:57:08.108 28255 28280 I appium  : GetName command
+04-10 07:57:08.112 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:08.119 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff00000101/text
+04-10 07:57:08.119 28255 28280 I appium  : GetText command
+04-10 07:57:08.124 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"Нам дарят"}
+04-10 07:57:08.131 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:08.132 28255 28280 I appium  : FindElement command
+04-10 07:57:08.134 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:08.135 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:08.144 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:08.152 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:08.152 28255 28280 I appium  : FindElement command
+04-10 07:57:08.152 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:08.158 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ff","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ff"}}
+04-10 07:57:08.165 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff000000ff/attribute/displayed
+04-10 07:57:08.166 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:08.169 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:08.176 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:08.176 28255 28280 I appium  : FindElement command
+04-10 07:57:08.179 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:08.179 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:08.186 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:08.193 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:08.193 28255 28280 I appium  : FindElement command
+04-10 07:57:08.195 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:08.199 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ff","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ff"}}
+04-10 07:57:08.207 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:08.207 28255 28280 I appium  : FindElement command
+04-10 07:57:08.209 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/edit_button', contextId: '00000000-0000-0876-ffff-ffff000000ff'
+04-10 07:57:08.214 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff00000106","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff00000106"}}
+04-10 07:57:08.221 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff00000106/attribute/displayed
+04-10 07:57:08.221 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:08.225 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:08.233 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:08.234 28255 28280 I appium  : FindElement command
+04-10 07:57:08.236 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:08.236 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:08.242 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:08.249 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:08.249 28255 28280 I appium  : FindElement command
+04-10 07:57:08.249 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:08.255 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000ff","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000ff"}}
+04-10 07:57:08.262 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:08.262 28255 28280 I appium  : FindElement command
+04-10 07:57:08.263 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/edit_button', contextId: '00000000-0000-0876-ffff-ffff000000ff'
+04-10 07:57:08.268 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff00000106","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff00000106"}}
+04-10 07:57:08.274 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff00000106/attribute/displayed
+04-10 07:57:08.274 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:08.279 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:08.285 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff00000106/click
+04-10 07:57:08.286 28255 28280 I appium  : Click command
+04-10 07:57:08.347 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:08.348 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:08.351 28289 28307 D EGL_emulation: app_time_stats: avg=188.67ms min=36.21ms max=945.72ms count=6
+04-10 07:57:08.364 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:08.364 28255 28280 I appium  : FindElement command
+04-10 07:57:08.365 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_edit_title'
+04-10 07:57:08.366 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:08.630   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f65bf000 0x3f71ce000]
+04-10 07:57:08.709 12833 12920 D EGL_emulation: app_time_stats: avg=299.55ms min=18.80ms max=1108.85ms count=4
+04-10 07:57:08.729   371   371 D goldfish-address-space: claimShared: Ask to claim region [0x3f71ce000 0x3f7ddd000]
+04-10 07:57:08.798   371   411 D goldfish-address-space: claimShared: Ask to claim region [0x3f4fc3000 0x3f5bd2000]
+04-10 07:57:08.957 28255 28280 W ByMatcher: Node returned null child: android.view.accessibility.AccessibilityNodeInfo@80007534; boundsInParent: Rect(0, 0 - 1080, 2340); boundsInScreen: Rect(0, 0 - 1080, 2340); packageName: ru.otus.wishlist; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: true; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+04-10 07:57:08.961 28255 28280 W ByMatcher: Skipping null child (0 of 2)
+04-10 07:57:08.964 28255 28280 W ByMatcher: Node returned null child: android.view.accessibility.AccessibilityNodeInfo@29585; boundsInParent: Rect(0, 0 - 176, 88); boundsInScreen: Rect(451, 2010 - 627, 2098); packageName: ru.otus.wishlist; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: ru.otus.wishlist:id/navigation_bar_item_icon_container; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: true; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+04-10 07:57:08.966 28255 28280 W ByMatcher: Skipping null child (1 of 2)
+04-10 07:57:08.968 28255 28280 W ByMatcher: Node returned null child: android.view.accessibility.AccessibilityNodeInfo@2a489; boundsInParent: Rect(0, 0 - 267, 99); boundsInScreen: Rect(406, 2109 - 673, 2208); packageName: ru.otus.wishlist; className: android.view.ViewGroup; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: ru.otus.wishlist:id/navigation_bar_item_labels_group; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: true; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+04-10 07:57:08.969 28255 28280 W ByMatcher: Skipping null child (0 of 1)
+04-10 07:57:08.971 28255 28280 W ByMatcher: Node returned null child: android.view.accessibility.AccessibilityNodeInfo@2afcc; boundsInParent: Rect(0, 0 - 360, 231); boundsInScreen: Rect(720, 1977 - 1080, 2208); packageName: ru.otus.wishlist; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: Профиль; tooltipText: Профиль; viewIdResName: ru.otus.wishlist:id/profile_menu; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: true; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: true; actions: [AccessibilityAction: ACTION_FOCUS - null, AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_NEXT_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_SET_SELECTION - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null, AccessibilityAction: ACTION_SHOW_TOOLTIP - null]
+04-10 07:57:08.972 28255 28280 W ByMatcher: Skipping null child (0 of 1)
+04-10 07:57:08.973 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:70)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)\n\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)\n\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)\n\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)\n\tat io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)\n\tat java.lang.Thread.run(Thread.java:920)\n"}}
+04-10 07:57:09.192 13314 13314 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+04-10 07:57:09.193 13314 13314 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+04-10 07:57:09.193 13314 13314 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+04-10 07:57:09.394 12833 12920 D EGL_emulation: app_time_stats: avg=432.04ms min=38.35ms max=1949.05ms count=5
+04-10 07:57:09.415 28289 28307 D EGL_emulation: app_time_stats: avg=64.81ms min=20.01ms max=231.45ms count=15
+04-10 07:57:09.489 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:09.491 28255 28280 I appium  : FindElement command
+04-10 07:57:09.492 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_edit_title'
+04-10 07:57:09.493 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:09.725 12660 13523 W InputManager-JNI: Input channel object '8723e85 Toast (client)' was disposed without first being removed with the input manager!
+04-10 07:57:09.732 12660 13523 W NotificationService: Toast already killed. pkg=ru.otus.wishlist token=android.os.BinderProxy@aedd0e1
+04-10 07:57:09.910 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-087a-ffff-ffff00000116","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-087a-ffff-ffff00000116"}}
+04-10 07:57:09.918 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-087a-ffff-ffff00000116/attribute/displayed
+04-10 07:57:09.919 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:09.923 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:09.932 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:09.932 28255 28280 I appium  : FindElement command
+04-10 07:57:09.936 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_edit_title'
+04-10 07:57:09.936 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:09.947 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-087a-ffff-ffff00000116","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-087a-ffff-ffff00000116"}}
+04-10 07:57:09.954 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-087a-ffff-ffff00000116/name
+04-10 07:57:09.954 28255 28280 I appium  : GetName command
+04-10 07:57:09.957 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:09.963 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-087a-ffff-ffff00000116/text
+04-10 07:57:09.965 28255 28280 I appium  : GetText command
+04-10 07:57:09.969 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"Изменить подарок"}
+04-10 07:57:09.975 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:09.976 28255 28280 I appium  : FindElement command
+04-10 07:57:09.976 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/description_input'
+04-10 07:57:09.977 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:09.982 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-087a-ffff-ffff0000012f","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-087a-ffff-ffff0000012f"}}
+04-10 07:57:09.989 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-087a-ffff-ffff0000012f/attribute/displayed
+04-10 07:57:09.989 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:09.994 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:10.001 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:10.001 28255 28280 I appium  : FindElement command
+04-10 07:57:10.001 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/description_input'
+04-10 07:57:10.002 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:10.007 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-087a-ffff-ffff0000012f","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-087a-ffff-ffff0000012f"}}
+04-10 07:57:10.014 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-087a-ffff-ffff0000012f/attribute/displayed
+04-10 07:57:10.014 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:10.018 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:10.025 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-087a-ffff-ffff0000012f/clear
+04-10 07:57:10.027 28255 28280 I appium  : Clear command
+04-10 07:57:10.033 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:10.039 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:10.040 28255 28280 I appium  : FindElement command
+04-10 07:57:10.041 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/description_input'
+04-10 07:57:10.042 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:10.052 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-087a-ffff-ffff0000012f","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-087a-ffff-ffff0000012f"}}
+04-10 07:57:10.058 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-087a-ffff-ffff0000012f/value
+04-10 07:57:10.058 28255 28280 I appium  : SendKeysToElement command
+04-10 07:57:10.097 28289 28307 D EGL_emulation: app_time_stats: avg=169.37ms min=49.79ms max=506.16ms count=7
+04-10 07:57:11.078 12660 13524 W ProcessStats: Tracking association SourceState{6713a1b system/1000 BTopFgs #21120} whose proc state 2 is better than process ProcessState{9cc27b8 com.google.android.gms.persistent/10101 pkg=com.google.android.gms} proc state 3 (4 skipped)
+04-10 07:57:11.081 13314 13314 I ShortcutsDataManager: ShortcutsDataManager.onContentChanged():73 onContentChanged()
+04-10 07:57:11.083 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:11.099 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:11.099 28255 28280 I appium  : FindElement command
+04-10 07:57:11.099 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/save_button'
+04-10 07:57:11.099 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:11.131 28289 28307 D EGL_emulation: app_time_stats: avg=57.09ms min=4.70ms max=452.20ms count=16
+04-10 07:57:11.604 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-087a-ffff-ffff00000138","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-087a-ffff-ffff00000138"}}
+04-10 07:57:11.612 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-087a-ffff-ffff00000138/attribute/displayed
+04-10 07:57:11.613 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:11.637 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:11.645 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:11.645 28255 28280 I appium  : FindElement command
+04-10 07:57:11.646 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/save_button'
+04-10 07:57:11.646 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:11.654 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-087a-ffff-ffff00000138","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-087a-ffff-ffff00000138"}}
+04-10 07:57:11.664 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-087a-ffff-ffff00000138/attribute/displayed
+04-10 07:57:11.664 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:11.668 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:11.674 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-087a-ffff-ffff00000138/click
+04-10 07:57:11.674 28255 28280 I appium  : Click command
+04-10 07:57:11.727 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:11.890 28289 28307 D OpenGLRenderer: endAllActiveAnimators on 0x7dab03f2c860 (RippleDrawable) with handle 0x7daa13eb8960
+04-10 07:57:11.890 12660 13523 W InputManager-JNI: Input channel object '9f6c82c ru.otus.wishlist/ru.otus.wishlist.MainActivity (client)' was disposed without first being removed with the input manager!
+04-10 07:57:11.914   371   411 D goldfish-address-space: claimShared: Ask to claim region [0x3f3723000 0x3f3772000]
+04-10 07:57:12.025   371   411 D goldfish-address-space: claimShared: Ask to claim region [0x3f3772000 0x3f37c1000]
+04-10 07:57:12.045 28289 28307 D EGL_emulation: app_time_stats: avg=640.36ms min=43.23ms max=2382.74ms count=4
+04-10 07:57:12.050 13314 13314 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+04-10 07:57:12.050 13314 13314 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+04-10 07:57:12.051 13314 13314 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+04-10 07:57:12.052 13314 13314 I ShortcutsDataManager: AbstractContentDataManager.startImportContentTask():235 startImportContentTask()
+04-10 07:57:12.052 13314 13602 I ShortcutsDataManager: AbstractContentDataManager$ImportContentTask.doInBackground():249 doInBackground()
+04-10 07:57:12.052 13314 13602 I PersonalDictionaryDataHandler: PersonalDictionaryDataHandler.beginProcess():111 LanguageTags = [en-US]
+04-10 07:57:12.060 13314 13602 I ShortcutsDataManager: AbstractContentDataManager.importRecords():339 importRecords() : Success : Count = 0
+04-10 07:57:12.064 13314 13602 I ShortcutsDataManager: AbstractContentDataManager.importContentData():289 importContentData() : Ending import process
+04-10 07:57:12.065 13314 15962 I Delight5Decoder: Delight5DecoderWrapper.unloadLanguageModel():820 unloadLanguageModel() : 4, version [n/a]
+04-10 07:57:12.084 13314 13602 I PersonalLanguageModelUpdater: PersonalLanguageModelUpdater$UpdateOperation.performInternal():162 run() : Added 0 words and 0 shortcuts
+04-10 07:57:12.084 13314 13602 I DynamicLanguageModelOperation: DynamicLanguageModelOperation.perform():38 perform() : 4 : cny : Completed
+04-10 07:57:12.084 13314 15962 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():614 loadLanguageModel() : 4, version [n/a]
+04-10 07:57:12.084 13314 13314 I ShortcutsDataManager: AbstractContentDataManager$ImportContentTask.onPostExecute():260 onPostExecute() : Result = [2,0]
+04-10 07:57:12.084 13314 13314 I ShortcutsDataManager: ShortcutsDataManager.onImportFinished():83 onImportFinished() : Result = 2 : Count = 0
+04-10 07:57:12.084 13314 15962 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():652 Loaded dynamic LM 4.en
+04-10 07:57:12.100   371   411 D goldfish-address-space: claimShared: Ask to claim region [0x3f37c1000 0x3f3810000]
+04-10 07:57:12.403 12833 12920 D EGL_emulation: app_time_stats: avg=905.24ms min=41.35ms max=3419.02ms count=4
+04-10 07:57:12.879 12814 12814 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+04-10 07:57:12.885 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:12.892 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:12.892 28255 28280 I appium  : FindElement command
+04-10 07:57:12.893 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:12.893 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:12.899 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:12.905 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff000000c7/attribute/displayed
+04-10 07:57:12.905 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:12.909 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:12.915 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:12.916 28255 28280 I appium  : FindElement command
+04-10 07:57:12.916 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:12.916 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:12.922 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:12.929 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/elements
+04-10 07:57:12.929 28255 28280 I appium  : FindElements command
+04-10 07:57:12.930 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:12.935 28255 28280 I appium  : Caching 1 found element
+04-10 07:57:12.936 28255 28280 I appium  : Cached 1 element
+04-10 07:57:12.936 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":[{"ELEMENT":"00000000-0000-0876-ffff-ffff0000013c","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff0000013c"}]}
+04-10 07:57:12.942 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:12.943 28255 28280 I appium  : FindElement command
+04-10 07:57:12.943 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:12.943 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:12.948 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:12.955 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:12.955 28255 28280 I appium  : FindElement command
+04-10 07:57:12.956 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:12.961 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff0000013c","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff0000013c"}}
+04-10 07:57:12.967 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff0000013c/attribute/displayed
+04-10 07:57:12.967 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:12.971 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:12.977 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:12.977 28255 28280 I appium  : FindElement command
+04-10 07:57:12.977 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:12.978 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:12.985 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:12.991 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:12.991 28255 28280 I appium  : FindElement command
+04-10 07:57:12.992 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:12.997 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff0000013c","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff0000013c"}}
+04-10 07:57:13.003 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:13.004 28255 28280 I appium  : FindElement command
+04-10 07:57:13.004 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/title', contextId: '00000000-0000-0876-ffff-ffff0000013c'
+04-10 07:57:13.009 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff0000013d","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff0000013d"}}
+04-10 07:57:13.016 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff0000013d/name
+04-10 07:57:13.017 28255 28280 I appium  : GetName command
+04-10 07:57:13.020 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:13.026 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff0000013d/text
+04-10 07:57:13.027 28255 28280 I appium  : GetText command
+04-10 07:57:13.030 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"Новый подарок"}
+04-10 07:57:13.037 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:13.037 28255 28280 I appium  : FindElement command
+04-10 07:57:13.038 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:13.039 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:13.046 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:13.052 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:13.052 28255 28280 I appium  : FindElement command
+04-10 07:57:13.052 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:13.058 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff0000013c","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff0000013c"}}
+04-10 07:57:13.064 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff0000013c/attribute/displayed
+04-10 07:57:13.065 28255 28280 I appium  : GetElementAttribute command
+04-10 07:57:13.069 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"true"}
+04-10 07:57:13.077 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:13.077 28255 28280 I appium  : FindElement command
+04-10 07:57:13.078 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gifts'
+04-10 07:57:13.079 28255 28280 I appium  : Waiting up to 10000ms for the device to idle
+04-10 07:57:13.088 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff000000c7","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff000000c7"}}
+04-10 07:57:13.095 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:13.095 28255 28280 I appium  : FindElement command
+04-10 07:57:13.096 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/gift_item', contextId: '00000000-0000-0876-ffff-ffff000000c7'
+04-10 07:57:13.100 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff0000013c","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff0000013c"}}
+04-10 07:57:13.107 28255 28280 I appium  : channel read: POST /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element
+04-10 07:57:13.107 28255 28280 I appium  : FindElement command
+04-10 07:57:13.109 28255 28280 I appium  : method: 'id', selector: 'ru.otus.wishlist:id/subtitle', contextId: '00000000-0000-0876-ffff-ffff0000013c'
+04-10 07:57:13.112 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":{"ELEMENT":"00000000-0000-0876-ffff-ffff0000013e","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0876-ffff-ffff0000013e"}}
+04-10 07:57:13.119 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff0000013e/name
+04-10 07:57:13.119 28255 28280 I appium  : GetName command
+04-10 07:57:13.123 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":null}
+04-10 07:57:13.130 28255 28280 I appium  : channel read: GET /wd/hub/session/b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011/element/00000000-0000-0876-ffff-ffff0000013e/text
+04-10 07:57:13.130 28255 28280 I appium  : GetText command
+04-10 07:57:13.134 28255 28280 I appium  : AppiumResponse: {"sessionId":"b9e0ddc3-24cb-4feb-bd58-8ccae2b8e011","value":"Нам уже не подарят"}
+04-10 07:57:13.151     0     0 I logd    : logdr: UID=2000 GID=2000 PID=28339 n tail=0 logMask=99 pid=0 start=0ns deadline=0ns

@@ -25,8 +25,6 @@
         <spotbugs.maven>4.8.3.1</spotbugs.maven>
 
         <databaseUrl>jdbc:postgresql://sql.otus.kartushin.su:5432/wishlist?sslmode=prefer</databaseUrl>
-        <databaseUsername>student</databaseUsername>
-        <databasePassword>student</databasePassword>
     </properties>
 
     <dependencies>
