@@ -64,10 +64,9 @@ public class DatabaseUtils {
     }
 
     @SneakyThrows
-    public void deleteUser(String username) {
+    public void deleteWishlist(String username) {
         String sqlDeleteGifts = "DELETE FROM gifts WHERE wish_id = (SELECT id FROM wishlists WHERE user_id = (SELECT id FROM users WHERE username = ?))";
         String sqlDeleteWishlists = "DELETE FROM wishlists WHERE user_id = (SELECT id FROM users WHERE username = ?)";
-        String sqlDeleteUser = "DELETE FROM users WHERE username = ?";
 
         try (Connection conn = DriverManager.getConnection(this.url, this.username, this.password)) {
             try (PreparedStatement ps = conn.prepareStatement(sqlDeleteGifts)) {
@@ -78,11 +77,6 @@ public class DatabaseUtils {
             try (PreparedStatement ps = conn.prepareStatement(sqlDeleteWishlists)) {
                 ps.setString(1, username);
                 int wishlistsDeleted = ps.executeUpdate();
-            }
-
-            try (PreparedStatement ps = conn.prepareStatement(sqlDeleteUser)) {
-                ps.setString(1, username);
-                int usersDeleted = ps.executeUpdate();
             }
         }
     }

@@ -10,8 +10,6 @@ import static io.appium.java_client.AppiumBy.id;
 @Singleton
 public class LoginPage extends AbsBasePage {
 
-    private final SelenideElement systemButton =
-            $(id("android:id/button1"));
     private final SelenideElement usernameInputField =
             $(id("ru.otus.wishlist:id/username_text_input"))
                     .as("Поле ввода имени пользователя");
@@ -23,9 +21,6 @@ public class LoginPage extends AbsBasePage {
                     .as("Кнопка входа");
 
     public void login(String username, String password) {
-        if (systemButton.exists()) {
-            systemButton.click();
-        }
         usernameInputField
                 .shouldBe(visible.because("Поле ввода имени пользователя не видно на экране"))
                 .sendKeys(username);

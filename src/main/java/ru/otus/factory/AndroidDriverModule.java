@@ -30,7 +30,7 @@ public class AndroidDriverModule extends AbstractModule {
 
         options.clearDeviceLogsOnStart();
 
-        options.noReset();
+        options.setNoReset(false);
 
         return options;
     }
@@ -44,7 +44,7 @@ public class AndroidDriverModule extends AbstractModule {
 //        options.setAutomationName(AutomationName.ANDROID_UIAUTOMATOR2);
 //        options.setDeviceName("emulator-5554");
 //
-//        options.setApp("http://localhost:8080/wishlist.apk");
+//        options.setApp("http://wiremock:8080/wishlist.apk");
 //        options.clearDeviceLogsOnStart();
 //        options.fullReset();
 //

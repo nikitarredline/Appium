@@ -30,6 +30,7 @@ public class AndroidExtension
     public void beforeEach(ExtensionContext context) {
         WebDriver driver = injector.getInstance(WebDriver.class);
         WebDriverRunner.setWebDriver(driver);
+
         Selenide.open();
     }
 

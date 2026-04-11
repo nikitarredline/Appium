@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static io.appium.java_client.AppiumBy.id;
 
-public class GiftsContent extends AbsComponent<GiftsContent>{
+public class GiftsContent extends AbsComponent<GiftsContent> {
 
     private final ElementsCollection items =
             root.$$(id("ru.otus.wishlist:id/gift_item"))

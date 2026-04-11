@@ -9,11 +9,14 @@ import static com.codeborne.selenide.Selenide.$;
 import static io.appium.java_client.AppiumBy.id;
 
 @Singleton
-public class EditWishlistPage extends AbsBasePage {
+public class FieldsWishlistPage extends AbsBasePage {
 
     private final SelenideElement title =
             $(id("ru.otus.wishlist:id/wishlist_edit_title"))
-                    .as("Заголовок формы редактирования списка желаний");
+                    .as("Заголовок формы списка желаний");
+    private final SelenideElement wishlistTitleInputField =
+            $(id("ru.otus.wishlist:id/title_input"))
+                    .as("Поле ввода заголовка списка желаний");
     private final SelenideElement wishlistDescriptionInputField =
             $(id("ru.otus.wishlist:id/description_input"))
                     .as("Поле ввода подзаголовка списка желаний");
@@ -21,7 +24,7 @@ public class EditWishlistPage extends AbsBasePage {
             $(id("ru.otus.wishlist:id/save_button"))
                     .as("Кнопка сохранения списка желаний");
 
-    public EditWishlistPage assertEditWishlistTitle(String expected) {
+    public FieldsWishlistPage assertTitle(String expected) {
         title
                 .shouldBe(visible.because("Заголовок не виден на экране"))
                 .shouldHave(text(expected).because("Неверный текст заголовка"));
@@ -29,6 +32,20 @@ public class EditWishlistPage extends AbsBasePage {
     }
 
     public void editDescription(String description) {
+        wishlistDescriptionInputField
+                .shouldBe(visible.because("Поле ввода подзаголовка не видно на экране"))
+                .clear();
+        wishlistDescriptionInputField.sendKeys(description);
+        saveButton
+                .shouldBe(visible.because("Кнопка сохранения не видна на экране"))
+                .click();
+    }
+
+    public void create(String title, String description) {
+        wishlistTitleInputField
+                .shouldBe(visible.because("Поле ввода заголовка не видно на экране"))
+                .clear();
+        wishlistTitleInputField.sendKeys(title);
         wishlistDescriptionInputField
                 .shouldBe(visible.because("Поле ввода подзаголовка не видно на экране"))
                 .clear();
