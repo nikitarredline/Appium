@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static io.appium.java_client.AppiumBy.id;
 
 @Singleton
-public class FieldsGiftPage {
+public class FieldsGiftPage extends AbsBasePage {
 
     private final SelenideElement title =
             $(id("ru.otus.wishlist:id/gift_edit_title"))

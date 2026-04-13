@@ -1,37 +1,35 @@
 package ru.otus;
 
 import com.google.inject.Inject;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import ru.otus.extensions.AndroidExtension;
 import ru.otus.pages.*;
-import ru.otus.testdata.TestUsers;
+import ru.otus.testdata.TestUser;
+import ru.otus.testdata.TestUserProvider;
 import ru.otus.utils.DatabaseUtils;
 
 @ExtendWith(AndroidExtension.class)
 public class WishlistsTest {
 
     @Inject private LoginPage loginPage;
+    @Inject private TestUserProvider userProvider;
     @Inject private DatabaseUtils databaseUtils;
     @Inject private MyWishlistsPage myWishlistsPage;
     @Inject private FieldsWishlistPage fieldsWishlistPage;
     @Inject private MyGiftsPage myGiftsPage;
     @Inject private FieldsGiftPage fieldsGiftPage;
 
-    private static final String WISHLIST_TITLE = "Новый год";
-    private static final String WISHLIST_DESCRIPTION = "К нам мчится, скоро все случится";
-    private static final String GIFT_TITLE = "Новый подарок";
-    private static final String GIFT_DESCRIPTION = "Нам дарят";
-
-    @BeforeEach
-    void setup() {
-        loginPage.login(TestUsers.USER_1.username, TestUsers.USER_1.password);
-    }
+    private final String WISHLIST_TITLE = "Новый год";
+    private final String WISHLIST_DESCRIPTION = "К нам мчится, скоро все случится";
+    private final String GIFT_TITLE = "Новый подарок";
+    private final String GIFT_DESCRIPTION = "Нам дарят";
 
     @Test
     void createAndEditWishlist() {
+        TestUser user1 = userProvider.get("user1");
+        databaseUtils.deleteWishlist(user1.getUsername());
+        loginPage.login(user1.getUsername(), user1.getPassword());
         String newWishlistDescription = "К нам уже не мчатся";
         myWishlistsPage.tapCreateWishlist();
         fieldsWishlistPage
@@ -53,9 +51,12 @@ public class WishlistsTest {
 
     @Test
     void createAndEditGift() {
+        TestUser user2 = userProvider.get("user2");
+        databaseUtils.deleteWishlist(user2.getUsername());
+        loginPage.login(user2.getUsername(), user2.getPassword());
         String giftPrice = "555";
         String newGiftDescription = "Нам уже не подарят";
-        databaseUtils.prepareWishlist(TestUsers.USER_1.username, WISHLIST_TITLE, WISHLIST_DESCRIPTION);
+        databaseUtils.prepareWishlist(user2.getUsername(), WISHLIST_TITLE, WISHLIST_DESCRIPTION);
         myWishlistsPage.tapTitleWishlist(1, WISHLIST_TITLE);
         myGiftsPage.tapCreateGift();
         fieldsGiftPage
@@ -74,10 +75,5 @@ public class WishlistsTest {
                 .assertNumberOfGifts(1)
                 .assertGiftTitle(1, GIFT_TITLE)
                 .assertGiftSubtitle(1, newGiftDescription);
-    }
-
-    @AfterEach
-    void cleanup() {
-        databaseUtils.deleteWishlist(TestUsers.USER_1.username);
     }
 }

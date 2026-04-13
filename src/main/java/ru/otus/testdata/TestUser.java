@@ -2,11 +2,19 @@ package ru.otus.testdata;
 
 public class TestUser {
 
-    public final String username;
-    public final String password;
+    private final String username;
+    private final String password;
 
     public TestUser(String username, String password) {
         this.username = username;
         this.password = password;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
     }
 }
