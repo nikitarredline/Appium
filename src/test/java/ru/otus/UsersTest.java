@@ -20,10 +20,10 @@ public class UsersTest {
     @Inject private UsersPage usersPage;
     @Inject private FilterPage filterPage;
 
-    private final String WISHLIST_TITLE = "Новый год";
-    private final String WISHLIST_DESCRIPTION = "К нам мчится, скоро все случится";
-    private final String GIFT_TITLE = "Новый подарок";
-    private final String GIFT_DESCRIPTION = "Нам дарят";
+    private final String wishlistTitle = "Новый год";
+    private final String wishlistDescription = "К нам мчится, скоро все случится";
+    private final String giftTitle = "Новый подарок";
+    private final String giftDescription = "Нам дарят";
 
     @Test
     void changingReservationStatus() {
@@ -31,8 +31,8 @@ public class UsersTest {
         TestUser user4 = userProvider.get("user4");
         databaseUtils.deleteWishlist(user4.getUsername());
         loginPage.login(user3.getUsername(), user3.getPassword());
-        databaseUtils.prepareWishlist(user4.getUsername(), WISHLIST_TITLE, WISHLIST_DESCRIPTION);
-        databaseUtils.prepareGift(user4.getUsername(), GIFT_TITLE, GIFT_DESCRIPTION, 500);
+        databaseUtils.prepareWishlist(user4.getUsername(), wishlistTitle, wishlistDescription);
+        databaseUtils.prepareGift(user4.getUsername(), giftTitle, giftDescription, 500);
         usersPage
                 .openUsers()
                 .openFilter();
@@ -40,7 +40,7 @@ public class UsersTest {
                 .assertEditFilter("Фильтры")
                 .editFilter(user4.getUsername());
         usersPage.selectUser(1);
-        myWishlistsPage.tapTitleWishlist(1, WISHLIST_TITLE);
+        myWishlistsPage.tapTitleWishlist(1, wishlistTitle);
         myGiftsPage
                 .tapReservedGift(1)
                 .assertReservedState(1, true);
