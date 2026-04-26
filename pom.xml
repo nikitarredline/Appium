@@ -13,11 +13,14 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <junit.version>6.0.2</junit.version>
+        <junit.version>5.10.2</junit.version>
         <guice.version>7.0.0</guice.version>
         <lombok.version>1.18.42</lombok.version>
         <selenide.version>7.14.0</selenide.version>
         <postgresql.version>42.7.10</postgresql.version>
+        <allure-junit5.version>2.34.0</allure-junit5.version>
+        <allure-maven.version>2.12.0</allure-maven.version>
+        <aspectj.version>1.9.22</aspectj.version>
 
         <maven.version>3.13.0</maven.version>
         <surefire.version>3.5.4</surefire.version>
@@ -60,6 +63,24 @@
             <artifactId>postgresql</artifactId>
             <version>${postgresql.version}</version>
         </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>${allure-junit5.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit-platform</artifactId>
+            <version>${allure-junit5.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -80,8 +101,20 @@
                 <configuration>
                     <systemPropertyVariables>
                         <databaseUrl>${databaseUrl}</databaseUrl>
-                        <databaseUsername>${databaseUsername}</databaseUsername>
-                        <databasePassword>${databasePassword}</databasePassword>
+
+                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+
+                        <argLine>
+                            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.22/aspectjweaver-1.9.22.jar"
+                        </argLine>
+
+                        <properties>
+                            <configurationParameters>
+                                junit.jupiter.extensions.autodetection.enabled = true
+                            </configurationParameters>
+                        </properties>
+
+                        <useModulePath>false</useModulePath>
                     </systemPropertyVariables>
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                 </configuration>
@@ -120,6 +153,11 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allure-maven.version}</version>
             </plugin>
         </plugins>
     </build>

@@ -22,19 +22,31 @@ public class AndroidDriverFactory {
 
     @SneakyThrows
     public WebDriver create() {
-        Emulator emulator = emulatorProvider.takeAndGet();
+
+        String serverUrl = System.getProperty(
+                "appium.server",
+                "http://127.0.0.1:4723"
+        );
 
         AndroidDriver driver =
                 new AndroidDriver(
-                        new URL("http://127.0.0.1:%d".formatted(emulator.getPort())),
-                        capabilities);
+                        new URL(serverUrl),
+                        capabilities
+                );
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         return driver;
     }
 
     public void quit(WebDriver driver) {
-        emulatorProvider.putBack();
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+        }
+
+        try {
+            emulatorProvider.putBack();
+        } catch (Exception ignored) {
+            // не валим тест из-за пула
+        }
     }
 }
